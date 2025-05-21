@@ -813,7 +813,8 @@
     </div>
 
 
-  </div>
+ 
+</div>
   <!-- About section end  -->
 
 
@@ -1011,12 +1012,26 @@
         <div class="footer-top">
             <div class="container">
                 <div class="footer-brand">
-                    <a class="align-items-center text-dark d-flex" href="#"><img class="logo me-2" src="image/logo3.png"
+                    <a class="align-items-center text-dark d-flex pb-4 " href="#"><img class="logo me-2" src="image/logo3.png"
                             alt="">
-                        <h4 class="text-white">Aaj neeti</h4>
+                        <h2 class="text-white">Aaj neeti</h2>
                     </a>
-                    <p class="footer-text body-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-                        temporibus dicta voluptatibus labore quae eum delectus optio pariatur?</p>
+                    <!-- <p class="footer-text body-medium">Lorem ipsum dolor sit, amet consectetur adipisicing </p> -->
+    <!-- <input type="text" class="form-control p-3 mb-3  w-100 " name="City" placeholder="Enter Your email"> -->
+
+    <input type="text" class="form-control p-3 mb-4  w-50 " name="City" placeholder="Enter Your name">
+    <input type="text" class="form-control p-3 mb-4  w-50 " name="City" placeholder="Enter Your City">
+
+
+
+
+
+
+
+
+
+
+    <span class="open-btnn" href="#">Submit</span>
                 </div>
                 <nav class="footer-nav" aria-labelledby="nav-label-1">
                     <p class="footer-list-title title-small" id="nav-label-1">Qucick Link</p>
@@ -1091,102 +1106,95 @@
 
 
 
-    <!-- new  -->
-    <!-- popup form  -->
-    <!-- popup form start  -->
-    <!-- <div class="overlay" id="overlay" onclick="closePopup()"></div> -->
+  <!-- js-script-start -->
 
-    <!-- Popup Modal -->
-    <!-- <div class="popup" id="popup">
-        <button id="close" onclick="closePopup()">&times;</button>
-        <h2 class="mb-3 " style="color: #e62b2b; font-weight: 600;">Get In Touch</h2> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <!-- js-script-start -->
+
+  <!-- js link Start -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <!-- js link end -->
+
+  <!-- popup form  -->
+  <!-- popup form start  -->
+  <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+  <!-- Popup Modal -->
+  <div class="popup" id="popup">
+    <button id="close" onclick="closePopup()">&times;</button>
+    <h2 class="mb-3 " style="color: #ffffff; font-weight: 600;">Get In Touch</h2>
     <!-- <input type="text" class="form-control p-3 mb-3  w-100 " name="City" placeholder="Enter Your email"> -->
 
-    <!-- <form class="form-blockK text-start " action="">
+    <input type="text" class="form-control p-2 mb-3  w-100 " name="City" placeholder="Enter Your name">
+    <input type="text" class="form-control p-2 mb-3  w-100 " name="City" placeholder="Enter Your City">
 
-            <input type="text" class=" p-2 mb-3  w-100 bg-transparent " placeholder="Enter Your name" required>
-            <input type="text" class=" p-2 mb-3  w-100 bg-transparent" placeholder="Enter Your City" required>
-
-            <input type="text number" class=" p-2 mb-3  w-100 bg-transparent" placeholder="Your Mobile Number" required>
+    <input type="tel" class="form-control p-2 mb-3  w-100 " name="phone" placeholder="Your Mobile Number" required>
 
 
-            <input type="text" class=" pb-2 mb-3 p-2 w-100 bg-transparent" placeholder="Enter Your password" required>
+    <input type="text" class="form-control pb-2 mb-3  w-100 " name="City" placeholder="Enter Your password">
 
 
- -->
 
 
-    <!-- <span style="letter-spacing: 2px;" class="butt" onclick="openPopup()"><button>Submit</button></span> -->
 
 
+
+    <span class="open-btnn" href="#">Submit</span>
     <!-- <button class="close-btn" onclick="closePopup()">Close</button> -->
-    <!-- </div> -->
+  </div>
 
+  <script>
+    function openPopup() {
+      document.getElementById("popup").style.display = "block";
+      document.getElementById("overlay").style.display = "block";
+    }
 
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    }
+    window.addEventListener("load", function () {
+      setTimeout(
+        function Open(event) {
+          document.querySelector(".popup").style.display = "block";
+        },
+        2000
+      )
+    }); 
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 100,
+      duration: 400,
+    });
+  </script>
 
-
-    <!-- js-script-start -->
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-    <!-- js-script-start -->
-
-    <!-- js link Start -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-    <!-- js link end -->
-
-
-    <script>
-        function openPopup() {
-            document.getElementById("popup").style.display = "block";
-            document.getElementById("overlay").style.display = "block";
-        }
-
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-            document.getElementById("overlay").style.display = "none";
-        }
-        window.addEventListener("load", function () {
-            setTimeout(
-                function Open(event) {
-                    document.querySelector(".popup").style.display = "block";
-                },
-                2000
-            )
-        }); 
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 100,
-            duration: 400,
-        });
-    </script>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <!-- Magnific Popup JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-
-    <!-- Initialization Script -->
-    <script>
-        $(document).ready(function () {
-            $('.galleryer').magnificPopup({
-                delegate: 'a.image-popup',
-                type: 'image',
-                galleryer: {
-                    enabled: true
-                }
-            });
-        });
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
-        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+   <!-- Magnific Popup JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+ 
+   <!-- Initialization Script -->
+   <script>
+     $(document).ready(function() {
+       $('.galleryer').magnificPopup({
+         delegate: 'a.image-popup',
+         type: 'image',
+         galleryer: {
+           enabled: true
+         }
+       });
+     });
+   </script>
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+ integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
