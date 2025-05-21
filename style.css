@@ -350,6 +350,13 @@ body {
     color: #f02020;
     font-weight: bold;
 }
+.nav-item{
+    font-size: 1.4rem;
+}
+.kite{
+    font-size: 1.7rem;
+}
+
 
 
 
@@ -386,12 +393,44 @@ body {
 
 .button a {
     text-decoration: none;
-    padding: 6px 10px;
+    padding: 10px 20px;
     border-radius: 17px;
     color: #fff;
     border: 1px solid #fff;
     background: transparent;
     font-weight: bolder;
+    font-size: 1.2rem;
+}
+.HEROBGG{
+    padding-top: 30px;
+    background: var(--gradient);
+    margin-top: 30px;
+}
+.buttonnn{
+    width: 200px;
+    padding: 10px 20px;
+    /* letter-spacing: 3px; */
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid var(--new-98-);
+    font-size: 1.5rem;
+}
+.qq p{
+font-size: 1.3rem;
+}
+.ss{
+    line-height: 27px;
+    font-weight: 400;
+}
+.imf1{
+    border-top-left-radius: 30% ;
+}
+.imf2{
+    border-top-right-radius: 30%;
 }
 
 .button a:hover {
@@ -422,7 +461,7 @@ body {
 }
 
 .img-cover {
-    aspect-ratio: 9 /5;
+    aspect-ratio: 9 /6;
 }
 
 
@@ -532,6 +571,12 @@ body {
 }
 
 /* hero section css end  */
+.container{
+    padding-inline: 16px;
+    max-width: 580px;
+    width: 100%;
+    margin-inline: auto;
+}
 .section {
     padding-block-end: 60px;
 }
@@ -573,7 +618,7 @@ body {
     transition: var(--transition-duration) var(--transition-quick);
 }
 
-.card:where(:hover, :focus-within) {
+.card :where(:hover, :focus-within) {
     box-shadow: var(--shadow-4);
 }
 
@@ -585,7 +630,7 @@ body {
     transition: var(--transition-duration-smooth) var(--transition-quick);
 }
 
-.card:where(:hover, :focus-within) .img-cover {
+.card :where(:hover, :focus-within) .img-cover {
     scale: 1.05;
     rotate: 2deg;
 }
@@ -628,7 +673,7 @@ body {
     color: var(--new-20-);
 }
 
-.card:where(:hover, :focus-within) .icon-btn {
+.card :where(:hover, :focus-within) .icon-btn {
     scale: 1;
     opacity: 1;
     visibility: visible;
@@ -644,7 +689,8 @@ body {
 
 }
 
-.card-title:where(:hover, :focus-visible) {
+
+.card-title :where(:hover, :focus-visible) {
     color: var(--primary-100);
 }
 
@@ -701,7 +747,10 @@ body {
     overflow: hidden;
     border-radius: var(--radius-extra-large-);
 }
-
+.feature-item{
+    display: flex;
+    align-items: center;
+}
 .feature-conte {
     padding: 24px 16px 0;
 }
@@ -760,10 +809,10 @@ place-items: center;
     animation: pulse 1.5s var(--transition-quick) forwards infinite;
 }
 
-@keyframes pulse{
-    0%{box-shadow: 0 0 0 0 #ffffff80;}
+@keyframes pulse {
+    0% {box-shadow: 0 0 0 0 #ffffff80;}
 
-    100%{
+    100% {
         box-shadow: 0 0 0 0 #ffffff00;
     }
 }
@@ -838,7 +887,7 @@ font-variation-settings: 'FILL' 1;
 
 }
 
-.story-card :where(:hover, :focus-visible) {
+.story-card:where(:hover, :focus-visible) {
     scale: 0.99;
 }
 
@@ -968,9 +1017,13 @@ footer li a{
     }
 
   .title-wrapper,
-  .story .title-wrapper{
+  .story .title-wrapper {
     display: grid;
     grid-template-columns: 1fr max-content;
+    align-items: center;
+    gap: 40px;
+    margin-block-end: 48px;
+    
   }
 
 
@@ -1126,4 +1179,69 @@ footer li a{
         max-width: 720px;
         z-index: -1;
     }
+    .property .section-text{
+        max-width: 640px;
+    }
+}
+
+@media screen and (min-width:1440px){
+
+:root{
+      --fs-headline-large: 7.2rem;
+        --fs-headline-medium: 5.4rem;
+        
+
+
+        --lh-headline-large: 92px;
+        --lh-headline-medium: 72px;
+        
+}
+.container{
+    max-width: 1460px;
+}
+.hero .container{
+    min-height: 580px;
+    align-items: center;
+}
+.hero-content{
+    grid-column: 1/ 6;
+}
+.hero-banner{
+    max-width: 820px;
+    width: 100%;
+    left: calc(50% - 108px);
+}
+.feature-conte{
+    padding: 60px;
+}
+
+
+} 
+
+@media screen and (min-width: 992px){
+    .story .section-title{
+    max-width: 820px;
+}
+.story-list {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.story-list {
+    grid-template-columns: repeat(12, 1fr);
+}
+ .story-card:where(:nth-child(1), :nth-child(6)){
+    grid-column: span 3;
+}
+.story-card:where(:nth-child(3), :nth-child(5)){
+    grid-column: span 4;
+} 
+.story-card:where(:nth-child(2), :nth-child(4)){
+    grid-column: span 5;
+} 
+.footer-brand{
+    grid-column: auto;
+}
+.footer-top .container{
+    grid-template-columns: 580px repeat(3, 1fr);
+}
 }
