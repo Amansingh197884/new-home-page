@@ -168,7 +168,30 @@ body {
     font-size: var(--fs-body-medium);
     line-height: var(--lh-body-medium);
     height: 300vh;
+      font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
 }
+
+
+
+
+
+h1{
+    font-family: garamond;
+}
+a{
+    font-family: garamond;
+
+}
+
+
+h2,h3,h4,h5,h6,a{
+    font-family: garamond;
+    
+}
+
 
 ::-webkit-scrollbar {
     width: 12px;
@@ -1465,10 +1488,11 @@ list .card-item .card-image {
     text-align: center;
     font-size: 1.5rem;
     text-decoration: none;
-    color: #ffffff;
+    color: #a5a0a0c2;
     /* border: none; */
-    border-radius: 30px;
-    border:solid 1px #fff;
+    /* border-radius: 30px; */
+    border:solid 1px #d3cbcbc2;
+    margin-bottom: 10px;
 
 }
 
@@ -1598,7 +1622,7 @@ ol li h6{
     overflow: hidden;
     position: relative;
     margin-bottom: 50px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .carousel .list .item{
   width: 180px;
@@ -1670,20 +1694,24 @@ display: none;
 
 .content .title{
     font-size: 100px;
-text-transform: uppercase; 
+/* text-transform: uppercase;  */
    font-weight: bold;
-       color: #14ff72cb;
+       /* color: #14ff72cb; */
        line-height: 1;
        opacity: 0;
+       color: #fff;
+       /* color: rgba(32, 33, 114, 0.703); */
        animation: animate 1s ease-in-out 0.3s 1 forwards;
+              text-shadow: 3px 4px 4px rgba(255,255, 255, 0.8);
+
 
 }   
 
 .content .name{
     font-size: 50px;
-text-transform: uppercase; 
+/* text-transform: uppercase;  */
    font-weight: bold;
-       color: #14ff72cb;
+       color: #fff;
        line-height: 1;
        text-shadow: 3px 4px 4px rgba(255,255, 255, 0.8);
               animation: animate 1s ease-in-out 0.6s 1 forwards;
@@ -1727,26 +1755,34 @@ text-transform: uppercase;
 .arrows{
     position: absolute;
     top: 80%;
-    right: 52%;
+    right: 68%;
     z-index: 100;
     width: 300px;
     max-width: 30%;
     display: flex;
     gap: 10px;
     align-items: center;
+    margin-top: 20px;
 }
 .arrows button{
     width: 50px;
 height: 50px;
 border-radius: 50%;
-background-color: #14ff72cb;
+/* background-color: #14ff72cb; */
+       /* color: rgba(32, 33, 114, 0.703); */
+       /* background-color:  rgba(32, 33, 114, 0.703); */
+           background-color: #fff;
+
+
+
 border: none;
 outline: none;
 font-size: 16px;
 font-weight: bold;
 transition: .5s;
 cursor: pointer;
-color: #fff;
+   color: black;
+
 }
 .arrows button:hover{
     background-color: #fff;
@@ -1799,4 +1835,19 @@ animation: runningTime 7s linear 1 forwards;
         padding: 10px 15px;
         font-size: 14px;
     }
+}
+.form-blockK input{
+    border-radius: 0;
+    outline: none;
+    border: 1PX SOLID #ffffff93;
+    background-color: rgba(4, 4, 27, 0.009);
+    font-size: 1rem;
+    color: white;
+
+    
+}
+.AM23{
+        /* background: var(--gradient); */
+        background-color: var(--primary-20);
+
 }
